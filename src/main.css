@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text-color: #EFE5F6;
+  --main-color: #5B1197;
+  --cards-color: #33193A;
+  --stress-color: #BD86E9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+  }
