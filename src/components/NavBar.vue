@@ -1,6 +1,7 @@
 <template>
   <nav class="flex items-center justify-between flex-wrap p-6 mr-20 ml-20">
-    <div class="flex items-center flex-shrink-0" :class="{ 'hidden': isMenuOpen }">
+    <!-- <div class="flex items-center flex-shrink-0" :class="{ 'hidden': isMenuOpen }"> -->
+      <div class="flex items-center flex-shrink-0">
       <img src="https://avatars.githubusercontent.com/u/102312214?v=4" alt="github-avatar" class="rounded-full w-10 h-10">
     </div>
 
@@ -23,7 +24,7 @@
         </span>
       </button>
       <transition name="menu-bubble">
-        <div v-if="isMenuOpen" class="lg:hidden absolute top-0 right-0 h-2/3 w-1/3 rounded-l-full flex flex-col justify-center items-center bubbleEffect">
+        <div v-if="isMenuOpen" class="lg:hidden absolute top-0 right-0 h-2/3 w-3/4 rounded-l-full flex flex-col justify-center items-center bubbleEffect">
           <a @click="closeMenu" href="#responsive-header" class=" bubbleText mb-3">About me</a>
           <a @click="closeMenu" href="#responsive-header" class="bubbleText mb-3">My Skills</a>
           <a @click="closeMenu" href="#responsive-header" class=" bubbleText mb-3">Projects</a>
@@ -50,16 +51,19 @@ function closeMenu() {
 </script>
 
 <style scoped>
+
 .navContainer a {
   color: var(--text-color);
-  transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Transición suave para el color del texto y el borde inferior */
-  border-bottom: 2px solid transparent; /* Inicialmente el borde inferior es transparente */
+  transition: color 0.3s ease, border-bottom-color 0.3s ease; 
+  border-bottom: 2px solid transparent; 
 }
 
 .navContainer a:hover {
-  color: var(--stress-color); /* Cambia el color del texto al hacer hover */
-  border-bottom-color: var(--stress-color); /* Cambia el color del borde inferior al hacer hover */
+  color: var(--stress-color); 
+  border-bottom-color: var(--stress-color); 
 }
+
+
 /* Estilos para el botón de hamburguesa */
 #boton {
   display: block;
@@ -91,6 +95,7 @@ svg {
   font-size: 18px; 
   color: var(--text-color);
 }
+
 @keyframes menu-bubble-enter {
   from {
     opacity: 0;
