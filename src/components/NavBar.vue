@@ -56,6 +56,7 @@ function closeMenu() {
   color: var(--text-color);
   transition: color 0.3s ease, border-bottom-color 0.3s ease; 
   border-bottom: 2px solid transparent; 
+  text-decoration: none;
 }
 
 .navContainer a:hover {
