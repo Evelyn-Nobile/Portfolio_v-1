@@ -57,7 +57,7 @@ nav {
   position: sticky;
   z-index: 1;
   top: 0;
-  box-shadow: 0px 4px 4px rgba(10, 10, 10, 0.2);
+  box-shadow: 0px 10px 10px rgba(10, 10, 10, 0.2);
 }
 }
 .navContainer a {

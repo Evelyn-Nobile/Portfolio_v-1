@@ -9,12 +9,19 @@
           Currently, I'm seeking opportunities to brew my skills, work on what I love, and continue my magical journey of growth. 
           Forever a learner: I'm always in search of new spells to add to my repertoire.</p>
         <div class="mt-8 flex gap-6 justify-center items-center">
-           <button class="buttons flex gap-1 p-2.5 rounded-xl"><ph-download-simple :size="25" />English resume</button>  
-           <button class="buttons flex gap-1 p-2.5 rounded-xl"><ph-github-logo :size="25" />Visit my Github</button>
+         <button class="buttons flex gap-1 p-2.5 rounded-xl">
+  <ph-download-simple :size="25" /><a href="https://drive.google.com/file/d/1CR-z6w8la1tObe3mguXMIiGgNGcTW4N3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="linkDownload">English resume</a>
+</button>
+
+
+           <button class="buttons flex gap-1 p-2.5 rounded-xl">
+  <ph-github-logo :size="25" />
+  <a href="https://github.com/Evelyn-Nobile" target="_blank" rel="noopener noreferrer" class="linkGithub">Visit my Github</a>
+</button>
           
         </div>
         <div class="mt-6 flex justify-center items-center ">
-               <a href="#" class="flex items-center gap-2 "><ph-download-simple :size="22" /> Descarga mi cv en español</a>
+               <a href="https://drive.google.com/file/d/1GF1M_mPVsN1MNynPruPLzJQUivBq4m5A/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 linkcv "><ph-download-simple :size="22" /> Descarga mi cv en español</a>
             </div>
        
     </div>
@@ -46,6 +53,10 @@ span, p, a {
 h1{
    color: var(--stress-color);
 }
+
+.linkcv{
+   text-decoration: underline;
+}
 a:hover{
   color: #e0b0ff;
   
@@ -60,9 +71,7 @@ a:hover{
   background-color: #7f00b2;
 }
 
-a{
-   text-decoration:underline;
-}
+
 
 /* responsive: */
 @media (min-width: 760px) and (max-width: 1023px) {
