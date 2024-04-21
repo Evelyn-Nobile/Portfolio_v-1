@@ -2,10 +2,11 @@
     <div class="skillscontainer mt-6">
         <div class="flex items-center my-4">
             <h1 class="text-3xl mr-2">My Skills</h1>
-            <img src="../assets/pocion.png" alt="">
+            <img src="../assets/pocion.png" alt="potion" class="potionimg">
         </div>
         <!-- <span>Tecnical skills learned so far:</span> -->
     </div>
+    
 </template>
 
 <script setup>
@@ -18,7 +19,7 @@
     margin-top: 5rem;
 }
 
-img {
+.potionimg {
     width: 65px;
     height: 90px;
 }
