@@ -53,7 +53,7 @@ a:hover{
 .buttons{
    background-color: var(--main-color);
    color: var(--text-color);
-   width: 10rem;
+   width: 11rem;
 }
 
 .buttons:hover {
