@@ -11,7 +11,7 @@ import HeroSection from './components/HeroSection.vue';
 
 <style lang="scss">
 #app{
-    background: linear-gradient(to right, #09030E, #190E38);
+   
 }
 
 

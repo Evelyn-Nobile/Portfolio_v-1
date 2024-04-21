@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex items-center justify-between flex-wrap p-6 mr-20 ml-20">
+  <nav class="flex items-center justify-between flex-wrap p-6 mr-20 ml-20 ">
     <!-- <div class="flex items-center flex-shrink-0" :class="{ 'hidden': isMenuOpen }"> -->
       <div class="flex items-center flex-shrink-0">
       <img src="https://avatars.githubusercontent.com/u/102312214?v=4" alt="github-avatar" class="rounded-full w-10 h-10">
@@ -52,6 +52,14 @@ function closeMenu() {
 
 <style scoped>
 
+@media screen and (min-width: 1024px) {
+nav {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  box-shadow: 0px 4px 4px rgba(10, 10, 10, 0.2);
+}
+}
 .navContainer a {
   color: var(--text-color);
   transition: color 0.3s ease, border-bottom-color 0.3s ease; 

@@ -1,19 +1,27 @@
 <template>
-   <div class="flex items-center justify-center mr-10 ml-10">
+   <div class="flex items-center justify-center  flex-col herocontainer">
+      <div class="w-1/2 flex  items-center justify-center herocontent">
     <img src="../assets/brujita.png" alt="witch">
-    <div>
+    <div class=" p-6 herotextsContainer">
       <span>FRONT-END DEVELOPER</span>
-        <h2>Hi, there! I'm Evelyn Nobile</h2>
-        <p class="text-justify w-1/2">I'm a junior front-end witch with basic knowledge of backend spells and database enchantments from Argentina.
+        <h1 class="text-4xl ">Hi, there! I'm Evelyn Nobile</h1>
+        <p class="text-justify mt-4 herotext">I'm a junior front-end witch with basic knowledge of backend spells and database enchantments from Argentina.
           Currently, I'm seeking opportunities to brew my skills, work on what I love, and continue my magical journey of growth. 
           Forever a learner: I'm always in search of new spells to add to my repertoire.</p>
-        <div>
-           <button class="buttons"><ph-download-simple :size="32" />English resume</button>  
-           <button class="buttons"><ph-github-logo :size="32" />Visit my Github</button>
+        <div class="mt-8 flex gap-6 justify-center items-center">
+           <button class="buttons flex gap-1 p-2.5 rounded-xl"><ph-download-simple :size="25" />English resume</button>  
+           <button class="buttons flex gap-1 p-2.5 rounded-xl"><ph-github-logo :size="25" />Visit my Github</button>
+          
         </div>
-        <a href=""><ph-download-simple :size="32" />Descarga mi cv en español</a>
+        <div class="mt-6 flex justify-center items-center ">
+               <a href="#" class="flex items-center gap-2 "><ph-download-simple :size="22" /> Descarga mi cv en español</a>
+            </div>
+       
     </div>
+    
    </div>
+
+</div>
 </template>
 
 <script setup>
@@ -21,15 +29,85 @@ import { PhDownloadSimple, PhGithubLogo } from '@phosphor-icons/vue'
 </script> 
 
 <style scoped>
+
+.herocontainer {
+width: 95%;
+}
+.herotextsContainer {
+  width: 100%; 
+}
+p{
+   width: 500px;
+}
 span, p, a {
   color: var(--text-color);
 }
-h2{
+
+h1{
    color: var(--stress-color);
+}
+a:hover{
+  color: #e0b0ff;
+  
 }
 .buttons{
    background-color: var(--main-color);
    color: var(--text-color);
+   width: 10rem;
+}
+
+.buttons:hover {
+  background-color: #7f00b2;
+}
+
+a{
+   text-decoration:underline;
+}
+
+/* responsive: */
+@media (min-width: 760px) and (max-width: 1023px) {
+   .herocontainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+      
+   }
+
+  p{
+      max-width: 350px;
+   }
+}
+
+@media screen and (max-width: 759px) {
+   .herotextsContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+p, h1, span,a{
+ width: 350px;
+}
+
+   .herocontent{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .buttons{
+      width: 160px;
+      text-align: center;
+      
+   }
+
+ a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
 }
 
 </style>
