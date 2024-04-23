@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex items-center justify-between flex-wrap p-6 mr-20 ml-20 ">
+  <nav class="flex items-center justify-between flex-wrap p-6 mr-20 ml-20  ">
     <!-- <div class="flex items-center flex-shrink-0" :class="{ 'hidden': isMenuOpen }"> -->
       <div class="flex items-center flex-shrink-0">
       <img src="https://avatars.githubusercontent.com/u/102312214?v=4" alt="github-avatar" class="rounded-full w-10 h-10">
@@ -57,7 +57,9 @@ nav {
   position: sticky;
   z-index: 1;
   top: 0;
-  box-shadow: 0px 10px 10px rgba(10, 10, 10, 0.2);
+box-shadow: 0px 2px 2px rgba(136, 43, 243, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
 }
 }
 .navContainer a {
