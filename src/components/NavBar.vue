@@ -2,7 +2,7 @@
   <nav class="flex items-center justify-between flex-wrap p-6 mr-20 ml-20  ">
     <!-- <div class="flex items-center flex-shrink-0" :class="{ 'hidden': isMenuOpen }"> -->
       <div class="flex items-center flex-shrink-0">
-      <img src="https://avatars.githubusercontent.com/u/102312214?v=4" alt="github-avatar" class="rounded-full w-10 h-10">
+     
     </div>
 
     <div class="hidden lg:flex lg:items-center lg:w-auto navContainer">

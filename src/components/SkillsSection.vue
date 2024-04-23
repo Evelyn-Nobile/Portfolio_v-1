@@ -1,11 +1,13 @@
 <template>
     <div class="skillscontainer mt-6">
-        <div class="flex items-center my-4">
+        <div class="flex  flex-col  justify-items-start  my-4">
             <h1 class="text-3xl mr-2">My Skills</h1>
-            <img src="../assets/pocion.png" alt="potion" class="potionimg">
+            <span class="text-lg mt-4">Technologies and tools learned so far:</span>
+            <!-- <img src="../assets/icons8-skills-64 (1).png" alt="skills"> -->
+            
         </div>
         </div>
-        <!-- <span>Tecnical skills learned so far:</span> -->
+        
         <div class="flex flex-col gap-6 mt-12">
         <div  class="flex justify-evenly items-center ">       
         <HTML/>
@@ -40,13 +42,7 @@
         </div>
 
     </div>
-
-   
     
-    <div>
-        <span class="text-lg flex justify-center items-center mt-12">To be continued...</span>
-        
-    </div>
 </template>
 
 <script setup>
@@ -80,10 +76,6 @@ import GitHub from '../SVG/GithubSvg.vue'
     margin-top: 5rem;
 }
 
-.potionimg {
-    width: 65px;
-    height: 90px;
-}
 
 h1 {
     color: var(--stress-color);
@@ -93,6 +85,8 @@ h1 {
 
 img {
     margin-left: 0;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 span{
     color: var(--text-color);

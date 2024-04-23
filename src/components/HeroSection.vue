@@ -1,13 +1,13 @@
 <template>
-   <div class="flex items-center justify-center  flex-col herocontainer">
+   <div class="flex items-center justify-center  flex-col mt-16 herocontainer ">
       <div class="w-1/2 flex  items-center justify-center herocontent">
-    <img src="../assets/brujita.png" alt="witch">
+    <img src="../assets/avatar.png" alt="witch">
     <div class=" p-6 herotextsContainer">
       <span>FRONT-END DEVELOPER</span>
         <h1 class="text-4xl ">Hi, there! I'm Evelyn Nobile</h1>
-        <p class="text-justify mt-4 herotext">I'm a junior front-end witch with basic knowledge of backend spells and database enchantments from Argentina.
-          Currently, I'm seeking opportunities to brew my skills, work on what I love, and continue my magical journey of growth. 
-          Forever a learner: I'm always in search of new spells to add to my repertoire.</p>
+        <p class="text-justify mt-4 herotext">I'm a junior front-end developer from Argentina,
+         graduated from Henry's bootcamp and self-taught.
+         Currently, I'm seeking opportunities to work in a company that allows me to showcase my skills, work on what I love, and continue growing. Forever a learner 🤓 </p>
         <div class="mt-8 flex gap-6 justify-center items-center">
          <button class="buttons flex gap-1 p-2.5 rounded-xl">
   <ph-download-simple :size="25" /><a href="https://drive.google.com/file/d/1CR-z6w8la1tObe3mguXMIiGgNGcTW4N3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="linkDownload">English resume</a>
@@ -71,7 +71,11 @@ a:hover{
   background-color: #7f00b2;
 }
 
-
+img{
+   width: 300px;
+   height: 300px;
+   border-radius: 10%;
+}
 
 /* responsive: */
 @media (min-width: 760px) and (max-width: 1023px) {
@@ -100,6 +104,7 @@ a:hover{
 p, h1, span,a{
  width: 350px;
 }
+
 
    .herocontent{
       display: flex;
