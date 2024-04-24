@@ -1,7 +1,7 @@
 <template>
    <div class="flex items-center justify-center  flex-col mt-16 herocontainer ">
       <div class="w-1/2 flex  items-center justify-center herocontent">
-    <img src="../assets/avatar.png" alt="witch">
+    <img src="../assets/WhatsApp Image 2024-04-23 at 20.56.41 (1).jpeg" alt="witch">
     <div class=" p-6 herotextsContainer">
       <span>FRONT-END DEVELOPER</span>
         <h1 class="text-4xl ">Hi, there! I'm Evelyn Nobile</h1>
@@ -72,8 +72,8 @@ a:hover{
 }
 
 img{
-   width: 300px;
-   height: 300px;
+   width: 350px;
+   height: 350px;
    border-radius: 10%;
 }
 
