@@ -41,6 +41,10 @@ import Sequelize from '../SVG/SequelizeSvg.vue';
 import Axios from '../SVG/AxiosSvg.vue';
 import Git from '../SVG/GitSvg.vue';
 import GitHub from '../SVG/GithubSvg.vue';
+import English from '../SVG/EnglishSvg.vue';
+import Agile from  '../SVG/AgileSvg.vue';
+import Vuex from '../SVG/VuexSvg.vue';
+import Pinia from '../SVG/PiniaSvg.vue';
 
 export default {
   components: {
@@ -57,6 +61,8 @@ export default {
     Bootstrap,
     MUI,
     Redux,
+    Pinia,
+    Vuex,
     Node,
     Express,
     PostgreSQL,
@@ -64,13 +70,16 @@ export default {
     Axios,
     Git,
     GitHub,
+    English,
+    Agile
   },
   data() {
     return {
       currentIndex: 0,
       iconComponents: [
         HTML, CSS, JS, React, Next, Vue, Nuxt, Vite, Astro, Tailwind, Bootstrap,
-        MUI, Redux, Node, Express, PostgreSQL, Sequelize, Axios, Git, GitHub
+        MUI, Redux, Pinia, Vuex, Node, Express, PostgreSQL, Sequelize, Axios, Git,
+         GitHub, English, Agile
       ],
       slideOffset: '0px'
     };
@@ -84,9 +93,11 @@ export default {
     },
     nextSlide() {
       if (this.currentIndex < this.iconComponents.length - 1) {
-        this.currentIndex++;
-        this.updateSlider();
-      }
+    this.currentIndex++;
+  } else {
+    this.currentIndex = 0; 
+  }
+  this.updateSlider();
     },
     goToSlide(index) {
       this.currentIndex = index;

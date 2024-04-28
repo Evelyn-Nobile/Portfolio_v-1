@@ -9,6 +9,7 @@
       <div class="lg:flex-grow">
         <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 mr-6 ">About me</a>
         <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 mr-6 ">My Skills</a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 mr-6 ">Learning</a>
         <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 mr-6 ">Projects</a>
         <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 mr-6 ">Contact me</a>
       </div>
@@ -27,6 +28,7 @@
         <div v-if="isMenuOpen" class="lg:hidden absolute top-0 right-0 h-2/3 w-3/4 rounded-l-full flex flex-col justify-center items-center bubbleEffect">
           <a @click="closeMenu" href="#responsive-header" class=" bubbleText mb-3">About me</a>
           <a @click="closeMenu" href="#responsive-header" class="bubbleText mb-3">My Skills</a>
+          <a @click="closeMenu" href="#responsive-header" class=" bubbleText mb-3">Learning</a>
           <a @click="closeMenu" href="#responsive-header" class=" bubbleText mb-3">Projects</a>
           <a @click="closeMenu" href="#responsive-header" class=" bubbleText mb-3">Contact</a>
           <span @click="closeMenu" class="text-lg menuClose">x</span>

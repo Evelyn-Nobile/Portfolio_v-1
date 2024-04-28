@@ -1,5 +1,6 @@
 <template>
-    
+    <div class="flex flex-col items-center gap-1">
+        <h2>Axios</h2>
     <svg viewBox="0 0 128 128">
             
             <path fill="#5a29e4" d="m 34,43.977569 27.379067,-22.912155 0.0385,91.494586 -9.3189,7.74007 -0.15403,-76.091455 z"></path>
@@ -7,6 +8,7 @@
          
                      </svg>
                    
+                   </div>
 </template>
 
 <script setup>
@@ -16,5 +18,9 @@
 svg{
     height: 90px;
     width: 90px;
+}
+
+h2{
+    color: var(--text-color);
 }
 </style>

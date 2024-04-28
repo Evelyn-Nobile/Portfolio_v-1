@@ -3,7 +3,6 @@
         <div class="flex  flex-col  justify-items-start  my-4">
             <h1 class="text-3xl mr-2">My Skills</h1>
             <span class="text-lg mt-4">Technologies and tools learned so far:</span>
-            <!-- <img src="../assets/icons8-skills-64 (1).png" alt="skills"> -->
             
         </div>
         </div>
