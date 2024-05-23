@@ -30,12 +30,6 @@ h1 {
     margin-left: 0; 
 }
 
-
-img {
-    margin-left: 0;
-    margin-bottom: 20px;
-    margin-left: 10px;
-}
 span{
     color: var(--text-color);
     

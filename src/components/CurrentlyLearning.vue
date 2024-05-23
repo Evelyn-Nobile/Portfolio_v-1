@@ -2,7 +2,7 @@
     <div class="currentlyContainer mt-6">
         <h1 class="text-3xl mr-2" >Currently Learning</h1>
 
-        <div class="mt-16 flex flex-col items-start gap-1">
+        <div class="mt-12 flex flex-col items-start gap-1">
             <h3 class="text-xl ">Python Basics - Codo a Codo </h3>
             <p class="text-justify  text-sm">198-hour course whose syllabus is: Review of HTML, CSS and JavaScript. SQL, MySQL, Scrum, Python, OOP and Flask.</p>
 
