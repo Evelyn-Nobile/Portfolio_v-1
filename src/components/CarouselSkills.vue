@@ -140,7 +140,7 @@ export default {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  color: #BD86E9;
+  color: #333333;
   border: none;
   padding: 8px 16px;
   cursor: pointer;

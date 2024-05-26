@@ -1,27 +1,28 @@
 <template>
-   <div class="flex items-center justify-center  flex-col mt-16 herocontainer ">
+   <div class="flex items-center justify-center  flex-col mt-16 herocontainer" id="about">
       <div class="w-1/2 flex  items-center justify-center herocontent">
-    <img src="../assets/WhatsApp Image 2024-04-23 at 20.56.41 (1).jpeg" alt="witch">
+    <img src="https://res.cloudinary.com/dpxrcotbh/image/upload/v1716681834/evs4c59nvryntj02b5xf.webp" alt="logo">
     <div class=" p-6 herotextsContainer">
-      <span>FRONT-END DEVELOPER</span>
-        <h1 class="text-4xl ">Hi, there! I'm Evelyn Nobile</h1>
-        <p class="text-justify mt-4 herotext">I'm a junior front-end developer from Argentina,
+        <h1 class="text-4xl ">Living among cats, coffee and code</h1>
+        <p class="text-justify mt-4 herotext">Hi!👋  I'm Evelyn, a junior front-end developer from Argentina,
          graduated from Henry's bootcamp and self-taught.
-         Currently, I'm seeking opportunities to work in a company that allows me to showcase my skills, work on what I love, and continue growing. Forever a learner 🤓 </p>
+         Currently, I'm seeking opportunities to work in a company that allows me to showcase my skills, work on what I love, and continue growing. </p>
+        
+        <p> Forever a learner 🤓 </p>
         <div class="mt-8 flex gap-6 justify-center items-center">
-         <button class="buttons flex gap-1 p-2.5 rounded-xl">
-  <ph-download-simple :size="25" /><a href="https://drive.google.com/file/d/1CR-z6w8la1tObe3mguXMIiGgNGcTW4N3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="linkDownload">English resume</a>
+         <button class="buttons flex gap-1 p-2.5 rounded-xl button-pink">
+  <ph-download-simple :size="25" /><a href="https://drive.google.com/file/d/1Qitgs_ZvUBTLFDOgo32JCLhc653O_lfx/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="linkDownload">English resume</a>
 </button>
 
 
-           <button class="buttons flex gap-1 p-2.5 rounded-xl">
+           <button class="buttons flex gap-1 p-2.5 rounded-xl button-lilac">
   <ph-github-logo :size="25" />
   <a href="https://github.com/Evelyn-Nobile" target="_blank" rel="noopener noreferrer" class="linkGithub">Visit my Github</a>
 </button>
           
         </div>
         <div class="mt-6 flex justify-center items-center ">
-               <a href="https://drive.google.com/file/d/1GF1M_mPVsN1MNynPruPLzJQUivBq4m5A/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 linkcv "><ph-download-simple :size="22" /> Descarga mi cv en español</a>
+               <a href="https://drive.google.com/file/d/1AV0t9WQs6AmLOATi3NmVPZrfWjzlzYCj/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 linkcv "><ph-download-simple :size="22" /> Descarga mi cv en español</a>
             </div>
        
     </div>
@@ -40,42 +41,74 @@ import { PhDownloadSimple, PhGithubLogo } from '@phosphor-icons/vue'
 .herocontainer {
 width: 95%;
 }
+
+
 .herotextsContainer {
   width: 100%; 
 }
+
 p{
    width: 500px;
 }
+
 span, p, a {
   color: var(--text-color);
 }
 
 h1{
-   color: var(--stress-color);
+ font-family: "Style Script", cursive;
+ font-weight: 800;
+ color: var(--text-color);
+ text-align: center;
+ letter-spacing: 4px;
+
+
 }
 
 .linkcv{
    text-decoration: underline;
 }
-a:hover{
-  color: #e0b0ff;
-  
-}
-.buttons{
-   background-color: var(--main-color);
-   color: var(--text-color);
-   width: 11rem;
+
+
+
+.buttons {
+  width: 11rem;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+  border: 1px solid var(--text-color);
+ 
 }
 
-.buttons:hover {
-  background-color: #7f00b2;
+.buttons::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  z-index: -1;
 }
 
-img{
-   width: 350px;
-   height: 350px;
-   border-radius: 10%;
+.button-pink::after {
+  background-color: var(--pink-color);
 }
+
+.button-lilac::after {
+  background-color: var(--lilac-color);
+}
+
+
+
+.buttons:active {
+   transform: translate(2px, 2px);
+}
+
+.buttons:active::after {
+  bottom: -6px;
+  right: -6px;
+}
+
 
 /* responsive: */
 @media (min-width: 760px) and (max-width: 1023px) {
@@ -85,6 +118,7 @@ img{
       align-items: center;
       justify-content: center;
       margin-top: 2rem;
+    
       
    }
 

@@ -1,42 +1,43 @@
 <template>
-  <nav class="flex items-center justify-between flex-wrap p-6 mr-20 ml-20  ">
-    <!-- <div class="flex items-center flex-shrink-0" :class="{ 'hidden': isMenuOpen }"> -->
-      <div class="flex items-center flex-shrink-0">
-     
-    </div>
+  <nav class="flex items-center  p-6 w-full">
+  
 
-    <div class="hidden lg:flex lg:items-center lg:w-auto navContainer">
-      <div class="lg:flex-grow">
-        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 mr-6 ">About me</a>
-        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 mr-6 ">My Skills</a>
-        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 mr-6 ">Learning</a>
-        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 mr-6 ">Projects</a>
-        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 mr-6 ">Contact me</a>
+    <!-- Navigation links for larger screens -->
+    <div class="hidden lg:flex  lg:w-auto navContainer">
+      <div class="lg:flex-grow flex justify-end items-center ">
+        <a href="#about" class="block mt-4 lg:inline-block lg:mt-0">About me</a>
+        <a href="#skills" class="block mt-4 lg:inline-block lg:mt-0">My Skills</a>
+        <a href="#learning" class="block mt-4 lg:inline-block lg:mt-0">Learning</a>
+        <a href="#projects" class="block mt-4 lg:inline-block lg:mt-0">Projects</a>
+        <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0">Contact me</a>
       </div>
     </div>
 
-    <div class="lg:hidden">
+    <!-- Menu toggle button for smaller screens -->
+    <div class="lg:hidden flex items-center ml-auto">
       <button id="boton" class="flex items-center px-3 py-2 border rounded bg-transparent toggle" @click="toggleMenu">
         <span v-if="!isMenuOpen">
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Menú</title>
+          <svg class="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
         </span>
       </button>
-      <transition name="menu-bubble">
-        <div v-if="isMenuOpen" class="lg:hidden absolute top-0 right-0 h-2/3 w-3/4 rounded-l-full flex flex-col justify-center items-center bubbleEffect">
-          <a @click="closeMenu" href="#responsive-header" class=" bubbleText mb-3">About me</a>
-          <a @click="closeMenu" href="#responsive-header" class="bubbleText mb-3">My Skills</a>
-          <a @click="closeMenu" href="#responsive-header" class=" bubbleText mb-3">Learning</a>
-          <a @click="closeMenu" href="#responsive-header" class=" bubbleText mb-3">Projects</a>
-          <a @click="closeMenu" href="#responsive-header" class=" bubbleText mb-3">Contact</a>
-          <span @click="closeMenu" class="text-lg menuClose">x</span>
-        </div>
-      </transition>
     </div>
+
+    <!-- Bubble menu for smaller screens -->
+    <transition name="menu-bubble">
+      <div v-if="isMenuOpen" class="lg:hidden absolute top-0 right-0 h-1/2 w-1/2 rounded-l-full flex flex-col justify-center items-center bubbleEffect">
+        <span @click="closeMenu" class="text-lg menuClose">x</span>
+        <a @click="closeMenu" href="#about" class="bubbleText mb-3">About me</a>
+        <a @click="closeMenu" href="#skills" class="bubbleText mb-3">My Skills</a>
+        <a @click="closeMenu" href="#learning" class="bubbleText mb-3">Learning</a>
+        <a @click="closeMenu" href="#projects" class="bubbleText mb-3">Projects</a>
+        <a @click="closeMenu" href="#contact" class="bubbleText mb-3">Contact</a>
+      </div>
+    </transition>
   </nav>
 </template>
+
 
 <script setup>
 import { ref } from 'vue';
@@ -55,40 +56,60 @@ function closeMenu() {
 <style scoped>
 
 @media screen and (min-width: 1024px) {
-nav {
-  position: sticky;
-  z-index: 1;
-  top: 0;
-box-shadow: 0px 2px 2px rgba(136, 43, 243, 0.2);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
+  nav {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ecdfeb;
+   
+
+  }
+
+
+  .navContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
 }
-}
+
 .navContainer a {
   color: var(--text-color);
-  transition: color 0.3s ease, border-bottom-color 0.3s ease; 
-  border-bottom: 2px solid transparent; 
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  border-bottom: 2px solid transparent;
   text-decoration: none;
+  margin-right: 20px;
 }
 
 .navContainer a:hover {
-  color: var(--stress-color); 
-  border-bottom-color: var(--stress-color); 
+  color: var(--text-color);
+  border-bottom-color: var(--text-color);
 }
 
 
 /* Estilos para el botón de hamburguesa */
+
+
 #boton {
   display: block;
   border: none; 
-  background-color: transparent; 
+  background-color: transparent;
+  cursor: pointer; 
+
 }
 
 svg {
   cursor: pointer;
   height: 24px;
   width: 24px;
+display: flex;
+
 }
+
 
 .menuClose, .toggle{
   color: var(--text-color);
@@ -102,7 +123,7 @@ svg {
   animation: menu-bubble-leave 0.3s ease-out;
 }
 .bubbleEffect {
-  background-color: var(--main-color); 
+  background-color: var(--lilac-color); 
 }
 .bubbleText {
   font-size: 18px; 
@@ -130,4 +151,5 @@ svg {
     transform: scale(0.5);
   }
 }
+
 </style>

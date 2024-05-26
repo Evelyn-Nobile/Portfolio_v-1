@@ -1,12 +1,16 @@
 <template>
     <div class="projectscontainer mt-6">
 
-        <div class="flex  flex-col  justify-items-start  my-4">
-            <h1 class="text-3xl mr-2">My Projects</h1>            
+        <div class="flex  flex-col  justify-items-start  my-4 title-container ">
+            <h1 class="text-3xl mr-2">Personal and academic projects...</h1>              
+            <img src="https://res.cloudinary.com/dpxrcotbh/image/upload/v1716702390/knkjp2awbahhdskt5ewy.gif" alt="cat" class="cat">          
         </div>
-        <div class="grid grid-cols-3 gap-6 mt-12">
+        <p class="clarification">*Even though some projects are full stack, I only show my contribution on the front-end.</p>
+        <div class="grid grid-cols-3 gap-6 mt-12">           
+            
             <div v-for="project in projects" :key="project.name" class="project-card overflow-hidden shadow-md w-96 h-full">
                 <div class="image-container relative w-full h-52 ">
+                    <span v-if="project.status" class="status-tag">{{ project.status }}</span>
                     <img :src="project.img" :alt="project.name" class="project-image  w-full h-full object-cover" />
                     <div class="overlay">
                         <p>{{ project.description }}</p>
@@ -16,6 +20,7 @@
                 <div class="mb-6 flex flex-wrap justify-center align-center gap-4 project-tags">
                     <component v-for="tag in project.tags" :is="getIconComponent(tag)" :key="tag" class="w-17 h-14"></component>
                 </div>
+               
                 <div class="project-links mb-4 flex justify-center align-center gap-6">
                     <a :href="project.repository" target="_blank">Repository</a>
                     <a v-if="project.link" :href="project.link" target="_blank">Live Demo</a>
@@ -86,13 +91,32 @@ const getIconComponent = (tag) => {
 }
 
 
-h1 {
-    color: var(--stress-color);
-    margin-left: 0; 
+.title-container { 
+    display: flex;
+   flex-direction: row;
 }
 
+.cat{
+    width: 120px;
+  margin-top: 0;
+
+}
+
+
+h1 {
+ text-align: left;
+  font-family: 'Style Script', cursive;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  color: var(--text-color);
+}
+.clarification {
+    font-size: 13px;
+    
+}
 .project-card {
-    border: 4px solid var(--stress-color);
+    border: 2px solid var(--text-color);
     border-radius: 15px;
 }
 
@@ -112,23 +136,40 @@ h1 {
     text-align: center;
     padding: 1rem;
     transition: opacity 0.3s;
+    border: 1px solid var(--text-color);
 }
-
 .image-container:hover .overlay {
     opacity: 1;
 }
 
 .project-title {
     margin: 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-family: 'Style Script', cursive;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    font-weight: 600;
     text-align: center;
-    color: var(--stress-color);
+    color: var(--text-color);
+
 }
 
 
 .project-links {
     color: var(--text-color);
+   text-decoration: underline;
 }
+
+.status-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: var(--lilac-color);
+    color: var(--text-color);
+border: 1px solid var(--text-color);
+  }
 
 </style>
