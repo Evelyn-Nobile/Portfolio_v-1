@@ -38,4 +38,10 @@ footer {
     cursor: pointer;
 }
 
+/* responsive */
+
+@media screen and (max-width: 320px) {
+   
+}
+
 </style>

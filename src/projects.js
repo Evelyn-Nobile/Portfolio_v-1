@@ -15,7 +15,8 @@ export const projects = [
         img:"https://res.cloudinary.com/dpxrcotbh/image/upload/v1716704554/c0asytxhveutrcgp8tv0.png",
         repository:"https://github.com/Evelyn-Nobile/Portfolio_v-1",
         link:"",
-        tags: ["Vue", "Tailwind"]
+        tags: ["Vue", "Tailwind"],
+        status: "Undergoing improvement"
     },
 
 
@@ -62,7 +63,7 @@ export const projects = [
     repository:"https://github.com/Evelyn-Nobile/HENRY_Proyecto-Integrador_Rick-and-Morty",
     link:"",
     tags: ["React", "Vite", "CSS", "NodeJs", "Express", "Sequelize", "PostgreSQL", "Axios"],
-    status: "Full Stack - Details fix in progress"
+    status: "Full Stack - Undergoing improvement"
 
    },
 

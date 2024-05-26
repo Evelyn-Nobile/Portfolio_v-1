@@ -169,4 +169,34 @@ export default {
 .pagination span.active {
   background-color: #BD86E9;
 }
+
+
+
+@media screen and (max-width: 768px) {
+  .pagination span {
+  width: 12px; 
+  height: 12px; 
+  margin: 0 3px; 
+}
+
+  .pagination span {
+    width: 8px; 
+    height: 8px;
+    margin: 0 2px; 
+  }
+
+  .carousel{
+    margin-top: 3rem;
+  }
+
+  .prev, .next {
+    font-size: 1.5rem;
+   
+  }
+
+  .carousel-svg{
+    width: 10rem;
+    height: 6.5rem;
+  }
+}
 </style>

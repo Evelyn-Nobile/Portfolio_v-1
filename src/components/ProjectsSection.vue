@@ -6,14 +6,14 @@
             <img src="https://res.cloudinary.com/dpxrcotbh/image/upload/v1716702390/knkjp2awbahhdskt5ewy.gif" alt="cat" class="cat">          
         </div>
         <p class="clarification">*Even though some projects are full stack, I only show my contribution on the front-end.</p>
-        <div class="grid grid-cols-3 gap-6 mt-12">           
+        <div class="grid grid-cols-3 gap-6 mt-12 cardContainer">           
             
             <div v-for="project in projects" :key="project.name" class="project-card overflow-hidden shadow-md w-96 h-full">
                 <div class="image-container relative w-full h-52 ">
                     <span v-if="project.status" class="status-tag">{{ project.status }}</span>
                     <img :src="project.img" :alt="project.name" class="project-image  w-full h-full object-cover" />
                     <div class="overlay">
-                        <p>{{ project.description }}</p>
+                        <p class="project-description">{{ project.description }}</p>
                     </div>
                 </div>
                 <h2 class="project-title">{{ project.name }}</h2>
@@ -172,4 +172,296 @@ h1 {
 border: 1px solid var(--text-color);
   }
 
+/* responsive */
+
+@media screen and (max-width: 284px) {
+  .overlay {
+    padding: 0.5rem; 
+    font-size: 0.75rem; 
+    line-height: 1.2rem; 
+    
+  }
+
+
+  
+}
+
+
+@media screen and (max-width: 320px) {
+    .projectscontainer {
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0;
+  }
+
+  .title-container {
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 5rem; 
+  }
+
+  .title-container h1 {
+    font-size: 1.5rem; 
+    width: 100%; 
+    max-width: 20rem; 
+    text-align: center; 
+    
+  }
+
+  .clarification {
+    font-size: 13px; 
+    text-align: center; 
+    width: 100%; 
+    max-width: 20rem; 
+  }
+
+  .cardContainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    max-width: 20rem; 
+    margin-top: 3rem; 
+  }
+
+  .project-card {
+    width: 95%; 
+    max-width: 20rem; 
+  }
+ .project-description {
+    font-size: 13px; 
+    text-align: center; 
+    width: 100%; 
+    max-width: 20rem; 
+  }
+  
+    }
+
+
+
+
+
+@media (min-width: 321px) and (max-width: 480px) {
+    .projectscontainer {
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0;
+ 
+  }
+
+  .title-container {
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 5rem; 
+  }
+
+  .title-container h1 {
+    font-size: 1.5rem; 
+    width: 100%; 
+    max-width: 30rem; 
+    text-align: center; 
+    
+  }
+
+  .clarification {
+    font-size: 13px; 
+    text-align: center; 
+    width: 100%; 
+    max-width: 29rem; 
+    
+  }
+
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 25rem;
+    margin-top: 3rem;
+    margin-left: auto; 
+    margin-right: auto; 
+   
+  }
+
+  .project-card {
+    width: 100%; 
+    max-width: 25rem; 
+  }  
+
+  .project-description {
+    font-size: 13px; 
+    text-align: center; 
+    width: 100%; 
+    max-width: 20rem; 
+
+  }
+}
+
+@media (min-width: 481px) and (max-width: 759px) {
+  .projectscontainer {
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0;
+ 
+  }
+
+  .title-container {
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 5rem; 
+  }
+
+  .title-container h1 {
+    font-size: 2rem; 
+    width: 100%; 
+    max-width: 30rem; 
+    text-align: center; 
+    
+  }
+
+  .clarification {
+    font-size: 13px; 
+    text-align: center; 
+    width: 100%; 
+   
+    
+  }
+
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 25rem;
+    margin-top: 3rem;
+    margin-left: auto; 
+    margin-right: auto; 
+   
+  }
+
+  .project-card {
+    width: 100%; 
+    max-width: 25rem; 
+  }  
+
+
+}
+
+@media screen and (min-width: 760px) {
+  .projectscontainer {
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0;
+ 
+  }
+
+  .title-container {
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 5rem; 
+  }
+
+  .title-container h1 {
+    font-size: 2em; 
+    width: 100%; 
+    max-width: 30rem; 
+    text-align: center; 
+    
+  }
+
+  .clarification {
+    font-size: 13px; 
+    text-align: center; 
+    width: 100%; 
+   
+    
+  }
+
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 25rem;
+    margin-top: 3rem;
+    margin-left: auto; 
+    margin-right: auto; 
+   
+  }
+
+  .project-card {
+    width: 100%; 
+    max-width: 40rem; 
+  }  
+
+@media screen and (min-width: 1025px) {
+.projectscontainer {
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0;
+  }
+
+  .title-container {
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 5rem; 
+  }
+
+  .title-container h1 {
+    font-size: 2em; 
+    width: 100%; 
+    max-width: 30rem; 
+    text-align: center; 
+  }
+
+  .clarification {
+    font-size: 13px; 
+    text-align: center; 
+    width: 100%; 
+  }
+
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 25rem;
+    margin-top: 3rem;
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+
+  .project-card {
+    width: 100%; 
+    max-width: 40rem; 
+  }  
+}
+  
+   
+}
 </style>
