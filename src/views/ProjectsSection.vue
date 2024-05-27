@@ -1,5 +1,5 @@
 <template>
-    <div class="projectscontainer mt-6">
+    <div class="projectscontainer mt-6" >
 
         <div class="flex  flex-col  justify-items-start  my-4 title-container ">
             <h1 class="text-3xl mr-2">Personal and academic projects...</h1>              
@@ -294,7 +294,7 @@ border: 1px solid var(--text-color);
   }
 
   .project-card {
-    width: 100%; 
+    width: 90%; 
     max-width: 25rem; 
   }  
 

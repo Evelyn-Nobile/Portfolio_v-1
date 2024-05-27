@@ -1,5 +1,5 @@
 <template>
-    <div class="skillscontainer mt-6">
+    <div class="skillscontainer mt-6" id="skills">
         <div class="flex  flex-col  justify-items-start  my-4 textsContainer ">
             <h1 class="text-3xl mr-2">My Skills...</h1>
             <span class="text-lg mt-4">Technologies and tools learned so far:</span>
@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-import CarouselSkills from './CarouselSkills.vue'
+import CarouselSkills from '../components/CarouselSkills.vue';
 
 
 </script>

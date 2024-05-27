@@ -1,5 +1,5 @@
 <template>
-    <div class="currentlyContainer mt-6">
+    <div class="currentlyContainer mt-6" id="learning">
         <h1 class="text-3xl mr-2" >Currently Learning...</h1>
 
         <div class="mt-12 flex flex-col items-start gap-1 barContainer">
@@ -7,7 +7,7 @@
             <p class="text-justify  text-sm">198-hour course whose syllabus is: Review of HTML, CSS and JavaScript. SQL, MySQL, Scrum, Python, OOP and Flask.</p>
 
 <div class="w-1/2 bg-gray-200 rounded-full dark:bg-gray-700 overflowBar ">
-  <div class="progress-bar text-xs font-medium text-purple-100 text-center p-0.5 leading-none rounded-full" style="width: 50%"> 50%</div>
+  <div class="progress-bar text-xs font-medium text-purple-100 text-center p-0.5 leading-none rounded-full" style="width: 80%"> 80%</div>
 </div>
         </div>
     

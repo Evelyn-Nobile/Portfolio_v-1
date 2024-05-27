@@ -5,7 +5,7 @@
     <!-- Navigation links for larger screens -->
     <div class="hidden lg:flex  lg:w-auto navContainer">
       <div class="lg:flex-grow flex justify-end items-center ">
-        <a href="#about" class="block mt-4 lg:inline-block lg:mt-0">About me</a>
+        <a href="#home" class="block mt-4 lg:inline-block lg:mt-0">Home</a>
         <a href="#skills" class="block mt-4 lg:inline-block lg:mt-0">My Skills</a>
         <a href="#learning" class="block mt-4 lg:inline-block lg:mt-0">Learning</a>
         <a href="#projects" class="block mt-4 lg:inline-block lg:mt-0">Projects</a>
@@ -28,19 +28,21 @@
     <transition name="menu-bubble">
       <div v-if="isMenuOpen" class="lg:hidden absolute top-0 right-0 h-1/2 w-1/2 rounded-l-full flex flex-col justify-center items-center bubbleEffect">
         <span @click="closeMenu" class="text-lg menuClose">x</span>
-        <a @click="closeMenu" href="#about" class="bubbleText mb-3">About me</a>
+        <a @click="closeMenu" href="#home" class="bubbleText mb-3">Home</a>
         <a @click="closeMenu" href="#skills" class="bubbleText mb-3">My Skills</a>
         <a @click="closeMenu" href="#learning" class="bubbleText mb-3">Learning</a>
         <a @click="closeMenu" href="#projects" class="bubbleText mb-3">Projects</a>
         <a @click="closeMenu" href="#contact" class="bubbleText mb-3">Contact</a>
+      
       </div>
     </transition>
   </nav>
+ 
 </template>
 
 
 <script setup>
-import { ref } from 'vue';
+import { ref} from 'vue';
 
 const isMenuOpen = ref(false);
 
@@ -51,7 +53,10 @@ function toggleMenu() {
 function closeMenu() {
   isMenuOpen.value = false;
 }
+
+
 </script>
+
 
 <style scoped>
 

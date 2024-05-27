@@ -21,6 +21,8 @@
 </template>
 
 <script>
+import { markRaw } from 'vue';
+
 import HTML from '../SVG/HtmlSvg.vue';
 import CSS from '../SVG/CssSvg.vue';
 import JS from '../SVG/JsSvg.vue';
@@ -48,30 +50,30 @@ import Pinia from '../SVG/PiniaSvg.vue';
 
 export default {
   components: {
-    HTML,
-    CSS,
-    JS,
-    React,
-    Next,
-    Vue,
-    Nuxt,
-    Vite,
-    Astro,
-    Tailwind,
-    Bootstrap,
-    MUI,
-    Redux,
-    Pinia,
-    Vuex,
-    Node,
-    Express,
-    PostgreSQL,
-    Sequelize,
-    Axios,
-    Git,
-    GitHub,
-    English,
-    Agile
+    HTML: markRaw(HTML),
+    CSS: markRaw(CSS),
+    JS: markRaw(JS),
+    React: markRaw(React),
+    Next: markRaw(Next),
+    Vue: markRaw(Vue),
+    Nuxt: markRaw(Nuxt),
+    Vite: markRaw(Vite),
+    Astro: markRaw(Astro),
+    Tailwind: markRaw(Tailwind),
+    Bootstrap: markRaw(Bootstrap),
+    MUI: markRaw(MUI),
+    Redux: markRaw(Redux),
+    Pinia: markRaw(Pinia),
+    Vuex: markRaw(Vuex),
+    Node: markRaw(Node),
+    Express: markRaw(Express),
+    PostgreSQL: markRaw(PostgreSQL),
+    Sequelize: markRaw(Sequelize),
+    Axios: markRaw(Axios),
+    Git: markRaw(Git),
+    GitHub: markRaw(GitHub),
+    English: markRaw(English),
+    Agile: markRaw(Agile)
   },
   data() {
     return {
