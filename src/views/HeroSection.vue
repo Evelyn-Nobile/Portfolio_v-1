@@ -5,7 +5,7 @@
     <img src="https://res.cloudinary.com/dpxrcotbh/image/upload/v1716681834/evs4c59nvryntj02b5xf.webp" alt="logo">
 
     <div class=" p-6 herotextsContainer">
-        <h1 class="text-4xl ">Living among cats, coffee and code</h1>
+        <h1 class="text-4xl ">Living between cats, coffee and code</h1>
         <p class="text-justify mt-4 herotext">Hi!👋  I'm Evelyn, a junior front-end developer from Argentina,
          graduated from Henry's bootcamp and self-taught.
          Currently, I'm seeking opportunities to work in a company that allows me to showcase my skills, work on what I love, and continue growing. </p>
