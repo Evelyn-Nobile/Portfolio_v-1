@@ -59,7 +59,7 @@ export const projects = [
    {
     name:"IP - Rick and Morty",
     description:"Individual project from Henry's bootcamp, which was based on consuming the Rick and Morty API. that consists of the rendering of the Rick and Morty characters, combined filters, option to add to favorites and search bar.",
-    img:"https://res.cloudinary.com/dpxrcotbh/image/upload/v1716707432/jacdss4lb7bqhcyb0diz.webp",
+    img:"https://res.cloudinary.com/dpxrcotbh/image/upload/v1716928270/cgzh7tlpignqjtsvjyhy.png",
     repository:"https://github.com/Evelyn-Nobile/HENRY_Proyecto-Integrador_Rick-and-Morty",
     link:"",
     tags: ["React", "Vite", "CSS", "NodeJs", "Express", "Sequelize", "PostgreSQL", "Axios"],
