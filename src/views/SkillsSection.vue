@@ -19,9 +19,9 @@ import CarouselSkills from '../components/CarouselSkills.vue';
 
 <style scoped>
 .skillscontainer {
-    margin-left: 7rem; 
-    padding-left: 0; 
-    margin-top: 7rem;
+  max-width: 1800px; 
+  margin: 7rem auto 0; 
+  padding: 0 2rem; 
 }
 
 
@@ -135,6 +135,7 @@ span{
     margin-left: 0;
     padding-left: 1rem;
     margin-top: 5rem;
+
   }
 
   .textsContainer {

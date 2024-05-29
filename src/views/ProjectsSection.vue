@@ -1,46 +1,36 @@
 <template>
-    <div class="projectscontainer mt-6" >
-
-        <div class="flex  flex-col  justify-items-start  my-4 title-container" id="projects">
-            <h1 class="text-3xl mr-2">Personal and academic projects...</h1>              
-            <img src="https://res.cloudinary.com/dpxrcotbh/image/upload/v1716702390/knkjp2awbahhdskt5ewy.gif" alt="cat" class="cat">          
-        </div>
-        <p class="clarification">*Even though some projects are full stack, I only show my contribution on the front-end.</p>
-        <div class="grid grid-cols-3 gap-6 mt-12 cardContainer">           
-            
-            <div v-for="project in projects" :key="project.name" class="project-card overflow-hidden shadow-md w-96 h-full">
-                <div class="image-container relative w-full h-52 ">
-                    <span v-if="project.status" class="status-tag">{{ project.status }}</span>
-                    <img :src="project.img" :alt="project.name" class="project-image  w-full h-full object-cover" />
-                    <div class="overlay">
-                        <p class="project-description">{{ project.description }}</p>
-                    </div>
-                </div>
-                <h2 class="project-title">{{ project.name }}</h2>
-                <div class="mb-6 flex flex-wrap justify-center align-center gap-4 project-tags">
-                    <component v-for="tag in project.tags" :is="getIconComponent(tag)" :key="tag" class="w-17 h-14"></component>
-                </div>
-               
-                <div class="project-links mb-4 flex justify-center align-center gap-6">
-                    <a :href="project.repository" target="_blank">Repository</a>
-                    <a v-if="project.link" :href="project.link" target="_blank">Live Demo</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-      
-
-       
-    
+  <div class="projectscontainer mt-6">
+      <div class="flex flex-col justify-items-start my-4 title-container" id="projects">
+          <h1 class="text-3xl mr-2">Personal and academic projects...</h1>
+          <img src="https://res.cloudinary.com/dpxrcotbh/image/upload/v1716702390/knkjp2awbahhdskt5ewy.gif" alt="cat" class="cat">
+      </div>
+      <p class="clarification">*Even though some projects are full stack, I only show my contribution on the front-end.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 cardContainer">
+          <div v-for="project in projects" :key="project.name" class="project-card overflow-hidden shadow-md w-96 h-full mx-auto">
+              <div class="image-container relative w-full h-52">
+                  <span v-if="project.status" class="status-tag">{{ project.status }}</span>
+                  <img :src="project.img" :alt="project.name" class="project-image w-full h-full object-cover" />
+                  <div class="overlay">
+                      <p class="project-description">{{ project.description }}</p>
+                  </div>
+              </div>
+              <h2 class="project-title">{{ project.name }}</h2>
+              <div class="mb-6 flex flex-wrap justify-center align-center gap-4 project-tags">
+                  <component v-for="tag in project.tags" :is="getIconComponent(tag)" :key="tag" class="w-17 h-14"></component>
+              </div>
+              <div class="project-links mb-4 flex justify-center align-center gap-6">
+                  <a :href="project.repository" target="_blank">Repository</a>
+                  <a v-if="project.link" :href="project.link" target="_blank">Live Demo</a>
+              </div>
+          </div>
+      </div>
+  </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
 import { projects as projectsData } from './../projects.js';
+
 import NextIcon from '../SVG/NextSvg.vue';
 import TailwindIcon from '../SVG/TailwindSVG.vue';
 import BootstrapIcon from '../SVG/BootSvg.vue';
@@ -55,6 +45,7 @@ import SequelizeIcon from '../SVG/SequelizeSvg.vue';
 import HTMLIcon from '../SVG/HtmlSvg.vue';
 import CSSIcon from '../SVG/CssSvg.vue';
 import JSIcon from '../SVG/JsSvg.vue';
+
 
 
 
@@ -85,9 +76,11 @@ const getIconComponent = (tag) => {
 
 <style scoped>
 .projectscontainer {
-    margin-left: 7rem; 
-    padding-left: 0; 
-    margin-top: 7rem;
+    width: 100%;
+    max-width: 1800px;
+    margin: 7rem auto 0;
+    padding: 0 2rem;
+
 }
 
 
@@ -118,6 +111,7 @@ h1 {
 .project-card {
     border: 2px solid var(--text-color);
     border-radius: 15px;
+  
 }
 
 
@@ -252,6 +246,7 @@ border: 1px solid var(--text-color);
     align-items: center; 
     justify-content: center; 
     margin: 0;
+    max-width: 1800px
  
   }
 
@@ -413,7 +408,6 @@ border: 1px solid var(--text-color);
     width: 100%; 
     max-width: 40rem; 
   }  
-
 
   
    

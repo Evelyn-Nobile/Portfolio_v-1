@@ -43,6 +43,7 @@ import { PhDownloadSimple, PhGithubLogo } from '@phosphor-icons/vue'
 
 .herocontainer {
 width: 95%;
+max-width: 1800px
 }
 
 
@@ -52,6 +53,7 @@ width: 95%;
 
 p{
    width: 500px;
+   max-width: 500px;
 }
 
 span, p, a {
@@ -278,7 +280,7 @@ p, h1, span,a{
       justify-content: center;
       margin-top: 2rem;  
       width: 80%; 
-     
+      
       
    }
 

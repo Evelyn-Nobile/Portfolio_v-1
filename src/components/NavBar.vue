@@ -92,6 +92,7 @@ img{
 img {
   display: block;
 }
+
 .navContainer a {
   color: var(--text-color);
   transition: color 0.3s ease, border-bottom-color 0.3s ease;

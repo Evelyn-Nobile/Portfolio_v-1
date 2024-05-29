@@ -39,7 +39,7 @@ p{
     margin-left: 7rem; 
     padding-left: 0; 
     margin-top: 7rem;
-   
+    max-width: 1800px
    
 }
 

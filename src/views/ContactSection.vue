@@ -35,6 +35,7 @@ import { PhLinkedinLogo, PhEnvelopeSimple, PhWhatsappLogo } from '@phosphor-icon
   justify-content: center;
   align-items: center;
   margin-top: 7rem;
+  max-width: 1800px
 }
 
 .contacttextsContainer {
@@ -43,6 +44,7 @@ import { PhLinkedinLogo, PhEnvelopeSimple, PhWhatsappLogo } from '@phosphor-icon
 
 p {
   width: 500px;
+  max-width: 500px;
 }
 
 span,
