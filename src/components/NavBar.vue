@@ -1,10 +1,14 @@
 <template>
+
+  <header>
   <nav class="flex items-center  p-6 w-full">
   
 
     <!-- Navigation links for larger screens -->
     <div class="hidden lg:flex  lg:w-auto navContainer">
-      <div class="lg:flex-grow flex justify-end items-center ">
+      <img src="https://avatars.githubusercontent.com/u/102312214?v=4" alt="avatar" width="45" height="20" class="rounded-full ml-6">
+      <div class="lg:flex-grow flex justify-end items-center">
+       
         <a href="#home" class="block mt-4 lg:inline-block lg:mt-0">Home</a>
         <a href="#skills" class="block mt-4 lg:inline-block lg:mt-0">My Skills</a>
         <a href="#learning" class="block mt-4 lg:inline-block lg:mt-0">Learning</a>
@@ -37,7 +41,7 @@
       </div>
     </transition>
   </nav>
- 
+</header>
 </template>
 
 
@@ -59,7 +63,9 @@ function closeMenu() {
 
 
 <style scoped>
-
+img{ 
+  display: none;
+}
 @media screen and (min-width: 1024px) {
   nav {
     position: fixed;
@@ -82,6 +88,9 @@ function closeMenu() {
   }
 }
 
+img {
+  display: block;
+}
 .navContainer a {
   color: var(--text-color);
   transition: color 0.3s ease, border-bottom-color 0.3s ease;

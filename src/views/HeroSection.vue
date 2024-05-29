@@ -1,5 +1,5 @@
 <template>
-   <div class="flex items-center justify-center flex-col mt-16 herocontainer" id="home">
+   <section class="flex items-center justify-center flex-col mt-16 herocontainer" id="home">
 
       <div class="flex  items-center justify-center herocontent">
     <img src="https://res.cloudinary.com/dpxrcotbh/image/upload/v1716681834/evs4c59nvryntj02b5xf.webp" alt="logo">
@@ -32,7 +32,7 @@
     
    </div>
 
-</div>
+   </section>
 </template>
 
 <script setup>

@@ -1,5 +1,5 @@
 <template>
-  <div class="contactContainer flex items-center justify-center flex-col rounded-xl mx-auto py-6" id="contact"> 
+  <section class="contactContainer flex items-center justify-center flex-col rounded-xl mx-auto py-6" id="contact"> 
     <div class="w-1/2 flex items-center justify-center contactContent">
       <img src="https://res.cloudinary.com/dpxrcotbh/image/upload/v1716711674/zuo4fyoaok9zmknet8ug.webp" alt="profile" class="rounded-lg  profile-img">
       <div class="p-6 contacttextsContainer">
@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
 </template>
 

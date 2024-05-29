@@ -1,5 +1,5 @@
 <template>
-    <div class="currentlyContainer mt-6" id="learning">
+    <section class="currentlyContainer mt-6" id="learning">
         <h1 class="text-3xl mr-2" >Currently Learning...</h1>
 
         <div class="mt-12 flex flex-col items-start gap-1 barContainer">
@@ -11,7 +11,7 @@
 </div>
         </div>
     
-</div>
+</section>
 
 </template>
 
