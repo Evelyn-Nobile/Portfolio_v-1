@@ -1,7 +1,7 @@
 <template>
     <div class="projectscontainer mt-6" >
 
-        <div class="flex  flex-col  justify-items-start  my-4 title-container ">
+        <div class="flex  flex-col  justify-items-start  my-4 title-container" id="projects">
             <h1 class="text-3xl mr-2">Personal and academic projects...</h1>              
             <img src="https://res.cloudinary.com/dpxrcotbh/image/upload/v1716702390/knkjp2awbahhdskt5ewy.gif" alt="cat" class="cat">          
         </div>
