@@ -6,7 +6,7 @@
 
     <!-- Navigation links for larger screens -->
     <div class="hidden lg:flex  lg:w-auto navContainer">
-      <img src="https://avatars.githubusercontent.com/u/102312214?v=4" alt="avatar" width="45" height="20" class="rounded-full ml-6">
+      <img src="https://res.cloudinary.com/dpxrcotbh/image/upload/v1717001429/pvrcyapqkgdlsmekrmg3.webp" alt="avatar" class="ml-12 w-18 h-20">
       <div class="lg:flex-grow flex justify-end items-center">
        
         <a href="#home" class="block mt-4 lg:inline-block lg:mt-0">Home</a>
@@ -74,6 +74,7 @@ img{
     width: 100%;
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
     background-color: #ecdfeb;
+    padding: 0;
    
 
   }
