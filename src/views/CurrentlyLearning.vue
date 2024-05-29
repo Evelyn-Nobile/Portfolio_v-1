@@ -52,6 +52,7 @@ p{
 @media screen and (max-width: 320px) {
     .currentlyContainer {
     margin: 5rem 0 0 0;
+    padding: 20px;
     
   }
 
@@ -102,6 +103,7 @@ margin-bottom: 1.5rem;
 @media (min-width: 321px) and (max-width: 480px) {
   .currentlyContainer {
     margin: 5rem 0 0 0;
+    padding: 20px;
     
   }
 
