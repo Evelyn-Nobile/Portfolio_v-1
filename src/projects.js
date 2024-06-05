@@ -5,6 +5,7 @@ export const projects = [
         img: "https://res.cloudinary.com/dpxrcotbh/image/upload/v1716705965/mblfstlaysp6ndfanau7.webp",
         repository: "https://github.com/Club-de-pesca-El-Bigua/El-Bigua-app",
         link: "",
+        video:"",
         tags: ["NextJs", "Tailwind", "MongoDB", "Mongoose", "ElectronJs"],
         status: "Full Stack - In process"
     },
@@ -25,6 +26,7 @@ export const projects = [
         img: "https://res.cloudinary.com/dpxrcotbh/image/upload/v1716705815/lvxakowljgaez1iecpbk.webp",
         repository: "https://github.com/Evelyn-Nobile/petShop",
         link: "",
+        video:"https://youtu.be/wqjOESK5LcA",
         tags: ["NextJs", "Tailwind", "Zustand", "MUI", "MongoDB", "Mongoose", "Next Auth"],
         status: "Full Stack"
    },
@@ -52,7 +54,8 @@ export const projects = [
     description:"Individual project from Henry's bootcamp, which was based on consuming a videogame API. It consists of rendering cards with videogames, pagination, combined filters, search bar and video game creation form.",
     img:"https://res.cloudinary.com/dpxrcotbh/image/upload/v1716707092/tv5luqnnagpc5vxscnol.webp",
     repository:"https://github.com/Evelyn-Nobile/PI_VIDEOGAMES",
-    link:"https://www.youtube.com/watch?v=5HkFHrEx-AE&t=1s&ab_channel=EvelynNobille",
+    link:"", 
+    video:"https://www.youtube.com/watch?v=5HkFHrEx-AE&t=1s&ab_channel=EvelynNobille", 
     tags: ["React", "Vite", "CSS", "NodeJs", "Express", "Sequelize", "PostgreSQL", "Axios"],
     status: "Full Stack"
    },

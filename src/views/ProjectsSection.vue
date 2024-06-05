@@ -20,6 +20,7 @@
               </div>
               <div class="project-links mb-4 flex justify-center align-center gap-6">
                   <a :href="project.repository" target="_blank">Repository</a>
+                  <a v-if="project.video" :href="project.video" target="_blank">Video</a>
                   <a v-if="project.link" :href="project.link" target="_blank">Live Demo</a>
               </div>
           </div>
