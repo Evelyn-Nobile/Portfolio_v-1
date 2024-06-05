@@ -14,7 +14,7 @@ export const projects = [
         description:"My first portfolio made in order to show my knowledge, studies and projects carried out.",
         img:"https://res.cloudinary.com/dpxrcotbh/image/upload/v1716704554/c0asytxhveutrcgp8tv0.png",
         repository:"https://github.com/Evelyn-Nobile/Portfolio_v-1",
-        link:"",
+        link:"https://evelyn-nobile.netlify.app/",
         tags: ["Vue", "Tailwind"],
         status: "Undergoing improvement"
     },
@@ -24,7 +24,7 @@ export const projects = [
         description: "E-commerce platform designed for buying and selling pet supplies, featuring third-party authentication, favorites management, shopping cart, admin panel, and integration with MercadoPago.",
         img: "https://res.cloudinary.com/dpxrcotbh/image/upload/v1716705815/lvxakowljgaez1iecpbk.webp",
         repository: "https://github.com/Evelyn-Nobile/petShop",
-        link: "https://pet-shop-peach.vercel.app/",
+        link: "",
         tags: ["NextJs", "Tailwind", "Zustand", "MUI", "MongoDB", "Mongoose", "Next Auth"],
         status: "Full Stack"
    },

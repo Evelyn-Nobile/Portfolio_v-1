@@ -91,6 +91,7 @@ img{
 
 img {
   display: block;
+
 }
 
 .navContainer a {
