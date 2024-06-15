@@ -6,13 +6,60 @@
             
         </div>
         </section>
-        <CarouselSkills/>
+
+       
+
+        <div class="grid grid-cols-5 mt-8 gap-8 SVGContainer">
+         
+          <HtmlSvg/>
+          <CssSvg/>
+          <JsSvg/>
+          <ReactSvg/>
+          <NextSvg/>
+          <ReduxSvg/>
+          <VueSvg/>
+          <ViteSvg/>
+          <TailwindSvg/>
+          <BootSvg/>          
+          <MUISvg/>
+          <NodeSvg/>
+          <ExpressSvg/>
+          <PostgreSQLSvg/>
+          <SequelizeSvg/>         
+          <AxiosSvg/>
+          <GitSvg/>
+          <GithubSvg/>
+          <EnglishSvg/>
+          <AgileSvg/>
+        </div>
+
        
     
 </template>
 
 <script setup>
-import CarouselSkills from '../components/CarouselSkills.vue';
+import AgileSvg from '@/SVG/AgileSvg.vue';
+
+import BootSvg from '@/SVG/BootSvg.vue';
+import CssSvg from '@/SVG/CssSvg.vue';
+import HtmlSvg from '@/SVG/HtmlSvg.vue';
+import JsSvg from '@/SVG/JsSvg.vue';
+import ReactSvg from '@/SVG/ReactSvg.vue';
+import ReduxSvg from '@/SVG/ReduxSvg.vue';
+import TailwindSvg from '@/SVG/TailwindSVG.vue';
+import VueSvg from '@/SVG/VueSvg.vue';
+import ViteSvg from '@/SVG/ViteSvg.vue';
+import NodeSvg from '@/SVG/NodeSvg.vue';
+import ExpressSvg from '@/SVG/ExpressSvg.vue';
+import PostgreSQLSvg from '@/SVG/PostgreSQL.vue';
+import SequelizeSvg from '@/SVG/SequelizeSvg.vue';
+import NextSvg from '@/SVG/NextSvg.vue';
+import AxiosSvg from '@/SVG/AxiosSvg.vue';
+import EnglishSvg from '@/SVG/EnglishSvg.vue';
+import GitSvg from '@/SVG/GitSvg.vue';
+import GithubSvg from '@/SVG/GithubSvg.vue';
+import MUISvg from '@/SVG/MaterialSvg.vue';
+
 
 
 </script>
@@ -68,9 +115,14 @@ span{
     text-align: center;
   }
     
-
+.SVGContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
 }
-
+}
 
 @media only screen and (min-width:321px) and (max-width:480px){
   .skillscontainer {
@@ -127,6 +179,13 @@ span{
     text-align: center;
   } 
 
+.SVGContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
 }
 
 @media (min-width: 760px) and (max-width: 1024px) {
