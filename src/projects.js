@@ -1,13 +1,13 @@
 export const projects = [
     {
         name: "El Bigua App*",
-        description: "Desktop application for managing members of the 'El Bigua' camping club. It allows the user to manage members, register, edit and delete them.",
+        description: "Windows service for managing members of the 'El Bigua' camping club. It allows users to manage members and their embarkations, including registering, editing, and deleting them.",
         img: "https://res.cloudinary.com/dpxrcotbh/image/upload/v1716705965/mblfstlaysp6ndfanau7.webp",
-        repository: "https://github.com/Club-de-pesca-El-Bigua/El-Bigua-app",
+        repository: "",
         link: "",
-        video:"",
-        tags: ["NextJs", "Tailwind", "MongoDB", "Mongoose", "ElectronJs"],
-        status: "Full Stack - In process"
+        video:"https://www.youtube.com/watch?v=C6Vhxo74FmY&ab_channel=EvelynNobille",
+        tags: ["NextJs", "Tailwind", "MongoDB", "Mongoose", "NodeJs"],
+        status: " Full Stack - The repository is private"
     },
 
     {

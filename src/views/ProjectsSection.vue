@@ -1,30 +1,31 @@
 <template>
   <div class="projectscontainer mt-6">
-      <div class="flex flex-col justify-items-start my-4 title-container" id="projects">
-          <h1 class="text-3xl mr-2">Personal and academic projects...</h1>
-          <img src="https://res.cloudinary.com/dpxrcotbh/image/upload/v1716702390/knkjp2awbahhdskt5ewy.gif" alt="cat" class="cat">
-      </div>
-      <p class="clarification">*Even though some projects are full stack, I only show my contribution on the front-end.</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 cardContainer">
-          <div v-for="project in projects" :key="project.name" class="project-card overflow-hidden shadow-md w-96 h-full mx-auto">
-              <div class="image-container relative w-full h-52">
-                  <span v-if="project.status" class="status-tag">{{ project.status }}</span>
-                  <img :src="project.img" :alt="project.name" class="project-image w-full h-full object-cover" />
-                  <div class="overlay">
-                      <p class="project-description">{{ project.description }}</p>
-                  </div>
-              </div>
-              <h2 class="project-title">{{ project.name }}</h2>
-              <div class="mb-6 flex flex-wrap justify-center align-center gap-4 project-tags">
-                  <component v-for="tag in project.tags" :is="getIconComponent(tag)" :key="tag" class="w-17 h-14"></component>
-              </div>
-              <div class="project-links mb-4 flex justify-center align-center gap-6">
-                  <a :href="project.repository" target="_blank">Repository</a>
-                  <a v-if="project.video" :href="project.video" target="_blank">Video</a>
-                  <a v-if="project.link" :href="project.link" target="_blank">Live Demo</a>
-              </div>
+    <div class="flex flex-col justify-items-start my-4 title-container" id="projects">
+      <h1 class="text-3xl mr-2">Personal and academic projects...</h1>
+      <img src="https://res.cloudinary.com/dpxrcotbh/image/upload/v1716702390/knkjp2awbahhdskt5ewy.gif" alt="cat" class="cat">
+    </div>
+    <p class="clarification">*Even though some projects are full stack, I only show my contribution on the front-end.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 cardContainer">
+      <div v-for="project in projects" :key="project.name" class="project-card overflow-hidden shadow-md w-96 h-full mx-auto">
+        <div class="image-container relative w-full h-52">
+          <span v-if="project.status" class="status-tag">{{ project.status }}</span>
+          <img :src="project.img" :alt="project.name" class="project-image w-full h-full object-cover" />
+          <div class="overlay">
+            <p class="project-description">{{ project.description }}</p>
           </div>
+        </div>
+        <h2 class="project-title">{{ project.name }}</h2>
+    
+        <div class="mb-6 flex flex-wrap justify-center align-center gap-4 project-tags">
+          <component v-for="tag in project.tags" :is="getIconComponent(tag)" :key="tag" class="w-17 h-14"></component>
+        </div>
+        <div class="project-links mb-4 flex justify-center align-center gap-6">
+          <a v-if="project.repository" :href="project.repository" target="_blank">Repository</a>
+          <a v-if="project.video" :href="project.video" target="_blank">Video</a>
+          <a v-if="project.link" :href="project.link" target="_blank">Live Demo</a>
+        </div>
       </div>
+    </div>
   </div>
 </template>
 
@@ -165,6 +166,7 @@ h1 {
     background-color: var(--lilac-color);
     color: var(--text-color);
 border: 1px solid var(--text-color);
+text-align: center;
   }
 
 /* responsive */

@@ -130,7 +130,13 @@ span{
     padding-left: 1rem;
     margin-top: 5rem;
   }
-
+  .SVGContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
   .textsContainer {
     align-items: center; 
     justify-content: center; 
