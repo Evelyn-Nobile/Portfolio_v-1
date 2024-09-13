@@ -51,7 +51,7 @@ export const projects = [
 
    {
     name:"IP - Videogames",
-    description:"Individual project from Henry's bootcamp, which was based on consuming a videogame API. It consists of rendering cards with videogames, pagination, combined filters, search bar and video game creation form.",
+    description:"Individual project, which was based on consuming a videogame API. It consists of rendering cards with videogames, pagination, combined filters, search bar and video game creation form.",
     img:"https://res.cloudinary.com/dpxrcotbh/image/upload/v1716707092/tv5luqnnagpc5vxscnol.webp",
     repository:"https://github.com/Evelyn-Nobile/PI_VIDEOGAMES",
     link:"", 
@@ -61,7 +61,7 @@ export const projects = [
    },
    {
     name:"IP - Rick and Morty",
-    description:"Individual project from Henry's bootcamp, which was based on consuming the Rick and Morty API. that consists of the rendering of the Rick and Morty characters, combined filters, option to add to favorites and search bar.",
+    description:"Individual project, which was based on consuming the Rick and Morty API. that consists of the rendering of the Rick and Morty characters, combined filters, option to add to favorites and search bar.",
     img:"https://res.cloudinary.com/dpxrcotbh/image/upload/v1716928270/cgzh7tlpignqjtsvjyhy.png",
     repository:"https://github.com/Evelyn-Nobile/HENRY_Proyecto-Integrador_Rick-and-Morty",
     link:"",
