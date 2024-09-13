@@ -7,7 +7,7 @@
         
 
 <div class="w-1/2 bg-gray-200 rounded-full dark:bg-gray-700 overflowBar ">
-  <div class="progress-bar text-xs font-medium text-purple-100 text-center p-0.5 leading-none rounded-full" style="width: 20%"> 20%</div>
+  <div class="progress-bar text-xs font-medium text-purple-100 text-center p-0.5 leading-none rounded-full" style="width: 30%"> 30%</div>
 </div>
         </div>
     

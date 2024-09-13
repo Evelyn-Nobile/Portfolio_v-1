@@ -14,7 +14,7 @@
 
         <div class="mt-8 flex  gap-6 justify-center items-center buttonsContainer">
          <button class="buttons flex gap-1 p-2.5 rounded-xl button-pink">
-  <ph-download-simple :size="25" /><a href="https://drive.google.com/file/d/1irxNXAsuDjnjZWAk7ei2P7rgrQjQHgKz/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="linkDownload">English resume</a>
+  <ph-download-simple :size="25" /><a href="https://drive.google.com/file/d/18PyIfLkBZJiG708dwU1oAmXQsW6-rZY6/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="linkDownload">English resume</a>
 </button>
 
 
@@ -25,7 +25,7 @@
         </div>
 
         <div class="mt-6 flex justify-center items-center ">
-               <a href="https://drive.google.com/file/d/14_Xh-iWBPwIyw6XwQuJmIrI9OElN3Dwp/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 linkcv "><ph-download-simple :size="22" /> Descarga mi cv en español</a>
+               <a href="https://drive.google.com/file/d/11fPu63YCFnhk85Ki2qlLeBNgt3wu0khN/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 linkcv "><ph-download-simple :size="22" /> Descarga mi cv en español</a>
             </div>
        
     </div>
