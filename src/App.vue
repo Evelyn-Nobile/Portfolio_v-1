@@ -4,6 +4,7 @@
 <SkillsSection/>
 <CurrentlyLearning/>
 <ProjectsSection/>
+<FlutterProjectsSection/>
 <ContactSection/>
 <FooterSection/>
 
@@ -19,6 +20,7 @@ import CurrentlyLearning from './views/CurrentlyLearning.vue';
 import ProjectsSection from './views/ProjectsSection.vue';
 import ContactSection from './views/ContactSection.vue';
 import FooterSection from './components/FooterSection.vue'
+import FlutterProjectsSection from './views/FlutterProjectsSection.vue';
 
 
 onMounted(() => {

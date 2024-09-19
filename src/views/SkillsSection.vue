@@ -19,6 +19,8 @@
           <ReduxSvg/>
           <VueSvg/>
           <ViteSvg/>
+          <DartSvg/>
+          <FlutterSvg/>
           <TailwindSvg/>
           <BootSvg/>          
           <MUISvg/>
@@ -59,6 +61,8 @@ import EnglishSvg from '@/SVG/EnglishSvg.vue';
 import GitSvg from '@/SVG/GitSvg.vue';
 import GithubSvg from '@/SVG/GithubSvg.vue';
 import MUISvg from '@/SVG/MaterialSvg.vue';
+import FlutterSvg from '@/SVG/FlutterSvg.vue';
+import DartSvg from '@/SVG/DartSvg.vue';
 
 
 
